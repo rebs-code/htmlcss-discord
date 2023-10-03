@@ -305,6 +305,11 @@ SECTION
     flex-direction: row-reverse;
 }
 
+.wave {
+    display: flex;
+    justify-content: stretch;
+}
+
 /* 
 *****
 BOTTOM SECTION
