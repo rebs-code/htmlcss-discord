@@ -365,9 +365,27 @@ TOP FOOTER
   }
 
 
-  .top-footer-card div:first-child {
+.top-footer-card div:first-child {
     flex: 2;
   }
+
+
+.flag {
+    max-width: 25px;
+    vertical-align: middle;
+}
+
+#language {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+i {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
 
 .top-footer-card div:not(:first-child) {
     flex: 1;
