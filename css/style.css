@@ -17,15 +17,6 @@ DEBUG
 *****
 */
 
-.debug .top-header {
-    
-    
-}
-
-.debug #login, #logo, #link {
-    
-    
-}
 
 .debug .bottom-header {
     /* background-color: #00008b; */
@@ -34,42 +25,33 @@ DEBUG
 
 .debug #bottom-header-card {
     /* background-color: #ee82ee;*/
-    height: 420px;
+    /* height: 420px; */
     /* border: black dashed 2px; */
 }
 
-.debug section {
+/* .debug section {
     height: 630px;
     background-color: white;
-}
-
-.debug main section:nth-child(odd) {
-    height: 630px;
-    background-color: white; 
-  }
-
-.debug main section:nth-child(even) {
-    background-color: #d3d3d3; 
-  }
+} */
 
 .debug .bottom-section {
-    height: 1050px;
+    /* height: 1050px; */
 }
 
-.debug .section-card {
+/* .debug .section-card {
     height: 520px;
-    border: black dashed 2px;
-}
+    border: black dashed 2px;}
+ */
 
-.debug .content-box {
+/* .debug .content-box {
     background-color: #1e90ff;
     border: black dashed 2px;
-}
+} */
 
-.debug .column {
+/* .debug .column {
     background-color:#ffc0cb;
     border: black dashed 2px;
-}
+} */
 
 .debug .bottom-card {
     background-color: #228b22;
@@ -164,6 +146,7 @@ p {
 
 .column h2 {
     font-size: 44px;
+    margin-top: 30PX;
 }
 
 /* 
@@ -232,7 +215,7 @@ BOTTOM HEADER
 
 h1 {
     font-size: 44px;
-    margin-top: 120px;
+    margin-top: 150px;
 }
 
 .bottom-header {
@@ -249,7 +232,7 @@ h1 {
     justify-content: center;
     text-align: center;
     background-color: transparent;
-    padding-bottom: 70px;
+    padding-bottom: 132px;
 }
 
 #bottom-header-card p {
@@ -273,6 +256,14 @@ MAIN
 *****
 */
 
+main section:nth-child(even) {
+    background-color: #f5f5f5; 
+  }
+
+main section:nth-child(odd) {
+    background-color: white; 
+  }
+
 
 /* 
 *****
@@ -284,12 +275,12 @@ SECTION
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 140px 0;
 }
 
 .section-card {
     width: 1250px;
     display: flex;
-
 }
 
 .content-box {
@@ -311,6 +302,7 @@ BOTTOM SECTION
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 140px 0;
 }
 
 .bottom-card {
