@@ -63,35 +63,35 @@ DEBUG
 ******* DEBUG FOOTER *******
 */
 
-.debug footer {
+/* .debug footer {
     background-color: #23272a;
-}
+} */
 
-.debug .top-footer {
+/* .debug .top-footer {
     height: 670px;
-}
+} */
 
-.debug .bottom-footer {
+/* .debug .bottom-footer {
     height: 120px;
-}
+} */
 
-.debug .top-footer-card {
+/* .debug .top-footer-card {
     height: 620px;
     
-}
+} */
 
 /* .debug .top-footer-card div:first-child {
     background-color: #f08080;
     border: black dashed 2px;
   } */
 
-.debug .top-footer-card div:not(:first-child) {
-    /* background-color: #20b2aa; */
+/* .debug .top-footer-card div:not(:first-child) {
+    background-color: #20b2aa;
     border: white dashed 2px;
-  }
+}*/
 
-.debug .bottom-footer-card {
-    /* background-color: #7fffd4; */
+/* .debug .bottom-footer-card {
+    background-color: #7fffd4;
     height: 85px;
 }
 
@@ -99,7 +99,7 @@ DEBUG
     border: black dashed 2px;
     height: 35px;
     background-color: #ffb6c1;
-}
+} */
 
 
 
@@ -343,11 +343,16 @@ TOP FOOTER
 *****
 */
 
+/* 
+***** FIRST COLUMN *****
+*/
+
 .top-footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white
+    color: white;
+    background-color: #23272a;;
 }
 
 .top-footer h3 {
@@ -358,6 +363,8 @@ TOP FOOTER
 .top-footer-card {
     width: 1250px;
     display: flex;
+    margin-top: 80px;
+    border-bottom: 2px solid var(--brand-color);
 }
 
 .top-footer-card div:first-child {
@@ -387,9 +394,31 @@ i {
     margin-right: 20px;
 }
 
+/* 
+***** OTHER COLUMNS *****
+*/
+
 .top-footer-card div:not(:first-child) {
     flex: 1;
   }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for the list items */
+li {
+    margin: 5px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+li:first-child {
+    font-weight: bold;
+    cursor: default;
+    color: var(--brand-color)
+}
 
 
 /* 
@@ -400,10 +429,10 @@ BOTTOM FOOTER
 
 .bottom-footer {
     display: flex;
-    border-top: white solid 2px;
-    border-bottom: white solid 1px;
+    border-bottom: solid 2px var(--brand-color);
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
+    background-color: #23272a;
 }
 
 .bottom-footer-card {
@@ -411,6 +440,8 @@ BOTTOM FOOTER
     justify-content: space-between;
     align-items: center;
     width: 1250px;
+    margin-top: 25px;
+    margin-bottom: 60px;
 }
 
 .footer-logo {
