@@ -270,14 +270,13 @@ MAIN
 *****
 */
 
-main section:nth-child(even) {
+main > section:not(.wave):nth-of-type(even) {
     background-color: #f5f5f5; 
-  }
+}
 
-main section:nth-child(odd) {
+main > section:not(.wave):nth-of-type(odd) {
     background-color: white; 
-  }
-
+}
 
 /* 
 *****
@@ -290,6 +289,8 @@ SECTION
     justify-content: center;
     align-items: center;
     padding: 140px 0;
+    position: relative;
+    z-index: 1
 }
 
 .section-card {
@@ -306,8 +307,21 @@ SECTION
 }
 
 .wave {
-    display: flex;
-    justify-content: stretch;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: -60px;
+}
+
+
+
+.wave-img {
+    width: 100%;
+}
+
+.inverted {
+    transform: scaleY(-1);
+    margin-bottom: 80px;
 }
 
 /* 
@@ -322,6 +336,8 @@ BOTTOM SECTION
     justify-content: center;
     align-items: center;
     padding: 140px 0;
+    position: relative;
+    z-index: 1
 }
 
 .bottom-card {
