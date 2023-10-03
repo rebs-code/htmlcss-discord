@@ -331,6 +331,12 @@ BOTTOM SECTION
     max-width: 950px;
 }
 
+.stars {
+    position: relative;
+    bottom: -45px;
+    display: inline-block;
+}
+
 /* 
 *****
 FOOTER
@@ -338,9 +344,7 @@ FOOTER
 */
 
 /* 
-*****
-TOP FOOTER
-*****
+***** TOP FOOTER *****
 */
 
 /* 
