@@ -18,25 +18,25 @@ DEBUG
 */
 
 
-.debug .bottom-header {
-    /* background-color: #00008b; */
-    /* height: 520px; */
-}
+/* .debug .bottom-header {
+    background-color: #00008b;
+    height: 520px;
+} */
 
-.debug #bottom-header-card {
-    /* background-color: #ee82ee;*/
-    /* height: 420px; */
-    /* border: black dashed 2px; */
-}
+/* .debug #bottom-header-card {
+    background-color: #ee82ee;
+    height: 420px;
+    border: black dashed 2px;
+} */
 
 /* .debug section {
     height: 630px;
     background-color: white;
 } */
 
-.debug .bottom-section {
-    /* height: 1050px; */
-}
+/* .debug .bottom-section {
+     height: 1050px;
+} */
 
 /* .debug .section-card {
     height: 520px;
@@ -53,11 +53,15 @@ DEBUG
     border: black dashed 2px;
 } */
 
-.debug .bottom-card {
+/* .debug .bottom-card {
     background-color: #228b22;
     height: 950px;
     border: black dashed 2px;
-}
+} */
+
+/* 
+******* DEBUG FOOTER *******
+*/
 
 .debug footer {
     background-color: #23272a;
@@ -76,18 +80,18 @@ DEBUG
     
 }
 
-.debug .top-footer-card div:first-child {
+/* .debug .top-footer-card div:first-child {
     background-color: #f08080;
     border: black dashed 2px;
-  }
+  } */
 
 .debug .top-footer-card div:not(:first-child) {
-    background-color: #20b2aa;
+    /* background-color: #20b2aa; */
     border: white dashed 2px;
   }
 
 .debug .bottom-footer-card {
-    background-color: #7fffd4;
+    /* background-color: #7fffd4; */
     height: 85px;
 }
 
@@ -111,7 +115,7 @@ COMMON
 */
 
 :root {
-    --discord-color: #7289da; 
+    --brand-color: #7289da; 
     --discord-blue: #255ee9; 
   }
 
@@ -134,6 +138,12 @@ body {
     border: 1px solid #23272a;
 }
 
+.brand-color {
+    color: white;
+    background-color: var(--brand-color);
+    border: 1px solid var(--brand-color);
+}
+
 p {
     font-size: 20px;
     line-height: 1.625;
@@ -144,9 +154,13 @@ p {
     flex-shrink: 0;
 }
 
-.column h2 {
+h2 {
     font-size: 44px;
     margin-top: 30PX;
+}
+
+h3 {
+    font-size: 30px;
 }
 
 /* 
@@ -306,7 +320,15 @@ BOTTOM SECTION
 }
 
 .bottom-card {
+    display: flex;
+    flex-direction: column;
     width: 1250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-card p {
+    max-width: 950px;
 }
 
 /* 
@@ -325,7 +347,13 @@ TOP FOOTER
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white
 }
+
+.top-footer h3 {
+    color: var(--brand-color);
+}
+
 
 .top-footer-card {
     width: 1250px;
@@ -333,8 +361,9 @@ TOP FOOTER
 }
 
 .top-footer-card div:first-child {
-    background-color: #f08080; /* Example background color */
+    background-color: #23272a;
   }
+
 
   .top-footer-card div:first-child {
     flex: 2;
