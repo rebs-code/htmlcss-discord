@@ -157,6 +157,15 @@ p {
     line-height: 1.625;
 }
 
+.column {
+    max-width: 500px;
+    flex-shrink: 0;
+}
+
+.column h2 {
+    font-size: 44px;
+}
+
 /* 
 *****
 HEADER
@@ -285,11 +294,6 @@ SECTION
 
 .content-box {
     flex-grow: 1;
-}
-
-.column {
-    min-width: 500px;
-    flex-shrink: 0;
 }
 
 .reverse {
